@@ -1,0 +1,33 @@
+# Repository hygiene: exclude generated output and private local configuration.
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local credentials; keep only the sanitized configuration template.
+.env
+.env.*
+!.env.sample
+
+# Keep the registry-specific lockfile local until regenerated against public PyPI.
+uv.lock
+
+# Logs and local tool caches
+*.log
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Machine-specific editor and operating-system files
+.vscode/
+.idea/
+.DS_Store

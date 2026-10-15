@@ -1,0 +1,28 @@
+# Dependencies and metadata for the standalone decision-model examples.
+[project]
+name = "ma-decision-1"
+version = "0.1.0"
+description = "Decision-model examples using native APIs, Microsoft Agent Framework, and a terminal maze."
+readme = "README.md"
+authors = [
+    { name = "Corrado Cavalli" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "agent-framework-core>=1.21.0",
+    "agent-framework-openai>=1.16.0",
+    "agent-framework-typesafe>=1.0.0a261008",
+    "azure-identity>=1.26.0",
+    "httpx2>=2.13.1",
+    "networkx>=3.7",
+    "openai>=3.26.1",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+    "typesafe-sdk>=0.7.2",
+]
+
+[tool.uv]
+# These examples run directly with uv run; no installable package is built.
+package = false
